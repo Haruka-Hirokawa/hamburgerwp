@@ -1,0 +1,19 @@
+@import "../../variables";
+
+// ↓archive 冒頭テキスト部分
+.p-lead {
+    display: block;
+    margin: 2rem auto;
+    width: 90%;
+    color: $text-brown;
+    h2{
+        padding: 1rem 0 3rem;
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+// ↑archive 冒頭テキスト部分

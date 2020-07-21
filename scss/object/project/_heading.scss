@@ -1,0 +1,32 @@
+@import "../../variables";
+
+// ↓single、page冒頭テキスト部分
+.p-heading {
+    display: block;
+    margin: auto;
+    padding: 2rem 0;
+    width: 90%;
+    color: $text-brown;
+    h2{
+        padding: 1rem 0 3rem;
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+    
+    h3 {
+        margin: 3rem 0;
+        font-size: 1.7rem;
+        font-weight: normal;
+    }
+    
+    h4 {
+        margin: 3rem 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+// ↑single、page冒頭テキスト部分

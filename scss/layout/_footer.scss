@@ -1,0 +1,18 @@
+.l-footer {
+    height: 15rem;
+    padding: 1rem 0;
+    background-color: #9D8670;
+    color: white;
+    text-align: center;
+    ul li{
+        display: inline;
+        font-size: 1.8rem;
+        line-height: 8rem;
+        a {
+            color: white;
+        }
+    }
+    &__copyright {
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.c-gridContents {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 90%;
+    color: $text-brown;
+    
+    &__picture {
+        img {
+            width: 90%; 
+            height: auto;
+        }   
+    }
+
+    &__text {
+        width: 130%;
+        font-size: 1.3rem;
+    }
+}

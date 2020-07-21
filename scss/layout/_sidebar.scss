@@ -1,0 +1,84 @@
+@import "../variables";
+
+
+// ↓サイドバー
+.l-sidebar {
+    position: fixed;
+    top: 0;
+    left: 100%; // ウインドウの端から左に１００％ を指定（position: fixed;の場合）    
+    z-index: 10;
+    width: 100%;
+    height: 100%;  
+    transition: all 300ms 0s ease;    
+
+    padding: 2rem;
+    background-color: #F2EDE9;
+    color: $text-gray;
+
+    @include breakpoint( pc ) {
+        position: static; // position: absolute/fixed/relative;の指定を外す
+        width: 25%;
+
+        padding-bottom: 10000px;
+        margin-bottom: -10000px;
+        // 上記２行 _container.scssの overflow:hidden;とセット サイドバーとメインコンテンツの高さを合わせる
+    }
+
+    &.is-open {
+        left: 10%;
+        overflow-y:scroll; /* 高さを指定しているので中身が超えた分はスクロールできるように */
+    }
+
+    &-button--close {
+        display: block;
+        margin: 0 0 0 auto; // 右寄せ
+        margin-right: 10%;
+    
+        @include breakpoint( pc ) {
+            display: none;
+        }
+    }
+
+    &__title {
+        display: none;
+
+        @include breakpoint( pc ) {
+            display: block;
+            margin: 3rem 0;
+            padding-bottom: 3rem;
+            font-size: 2rem;
+        }
+        
+    }
+}
+// ↑サイドバー
+
+// ↓スマホ画面 サイドバー出現時 モーダル部分（body部分を透過）
+.l-sidebar-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    
+    display: none;
+}
+// ↑スマホ画面 サイドバー出現時 モーダル部分（body部分を透過）
+
+
+// ↓header内 メニュー ボタン
+.l-sidebar-button--open{
+    display: block;
+    margin: 0 0 0 auto; // 右寄せ
+    margin-top: 8%;
+    margin-right: 5%;
+    color: $text-gray;
+    
+
+    @include breakpoint( pc ) {
+        display: none;
+    }
+}
+// ↑header内 メニュー ボタン

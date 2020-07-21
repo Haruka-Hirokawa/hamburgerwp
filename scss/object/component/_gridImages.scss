@@ -1,0 +1,26 @@
+.c-gridImages {
+    @include breakpoint( tablet ) {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 5rem auto;
+        width: 90%;
+        @include breakpoint( pc ) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    &__image {
+        margin: 3rem 0;
+        @include breakpoint( tablet ) {
+            margin: 0;
+        }
+        img {
+            display: block;
+            margin: auto;
+            width: 90%;
+            @include breakpoint( tablet ) {
+                width: 100%;
+            }
+        }
+    }
+}

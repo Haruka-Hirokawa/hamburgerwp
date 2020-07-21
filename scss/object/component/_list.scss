@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.c-list {
+    color: $text-brown;
+    font-size: 1.5rem;
+    ul, ol {
+        padding: 2rem 0;
+        li{
+            margin-left: 5%; /* リストの左側に余白 */
+        }
+    }
+
+    ol li {       
+        list-style-type: decimal; /* リストの左側に数字 */
+        // ↑(リセットCSSは、基本的にli {list-style-type: none;}が指定されおり、)リストマーカーを表示するよう記載
+        list-style-position: inside; // マーカーがリスト内容の領域の内側に表示され、マーカーとマーカー以外の部分の高さが揃う       
+    }
+}

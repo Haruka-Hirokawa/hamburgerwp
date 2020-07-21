@@ -1,0 +1,23 @@
+.p-globalmenu {
+    margin-top: 10rem;
+    @include breakpoint( pc ) {
+        margin-top: 0;
+    }
+
+    &__list {
+        margin: 3rem 0;
+        h3 {
+            font-size: 1.7rem;
+            font-weight: normal;
+        }
+
+        &__detail {
+            padding: 3rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            li a {
+                color: #707070;
+            }    
+        }
+    }
+}

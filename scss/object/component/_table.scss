@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.c-table {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    height: 30rem;
+    border-color: $text-gray;
+    color: $text-brown;
+
+    tr td:first-child {
+        width: 40%;
+    }
+
+    td {
+        padding-left: 10%;
+        font-size: 1.5rem;
+    }
+}

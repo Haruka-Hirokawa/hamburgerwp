@@ -1,0 +1,41 @@
+// ↓共通部分
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%; // →10px
+}
+body{
+    min-width: 350px;
+    background-color: #FFFDFA;
+    line-height: 1.5rem;
+}
+a {
+    text-decoration: none;    
+}
+li, dl, dt, dd {
+    list-style: none;
+}
+// ↑共通部分
+
+
+// ↓メディアクエリ
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: 641px) {
+            @content;
+        }
+    }
+
+    @if $point == pc {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+
+    @if $point == wide {
+        @media (min-width: 1000px) {
+            @content;
+        }
+    }
+}
+// ↑メディアクエリ

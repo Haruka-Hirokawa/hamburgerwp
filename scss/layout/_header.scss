@@ -1,0 +1,60 @@
+@import "../variables";
+
+.l-header {
+    @include breakpoint( pc ) {
+        display: flex;
+        justify-content: space-between;       
+    }
+
+    &__sitename {
+        margin: 2rem 0 4rem 0;
+        color: $text-gray;
+        font-size: 4rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        @include breakpoint( pc ) {
+            margin: 5%;           
+        }   
+    }
+
+    &__searchform {
+        height: 3rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        @include breakpoint( pc ) {
+            margin: 5% 3%;           
+        }
+
+        input {
+            vertical-align : middle; // 検索ボックス、検索ボタンの高さのズレを修正
+        }
+
+        label {
+            font-size: 0;
+        }
+
+        &__keywords {
+            width: 20rem;
+            height: 4rem;
+            margin-right: 0.5rem;
+            padding: 1rem 1rem 1rem 3.5rem;
+            border: 1px solid #707070;
+            border-radius: 1rem;
+            background: url(../images/searchform_loupe.png) no-repeat 8px;
+            font-size: 1.5rem;
+        }
+
+        &__searchbutton{
+            width: 6rem;
+            height: 4rem;
+            padding: 1rem;
+            border: 1px solid #707070;
+            border-radius: 1rem;
+            background-color: #F2EDE9;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+

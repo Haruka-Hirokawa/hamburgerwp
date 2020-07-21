@@ -1,0 +1,35 @@
+.p-access {
+    position: relative;
+    img {
+        margin-top: 3rem;
+        width: 100%;
+        height: 60rem;
+        object-fit: cover; // 画像の縦横比を維持したままトリミングして画面を埋める    
+        vertical-align: bottom; // divで囲んだimgタグ 下の余白を消す（インライン要素でのみ使用可能）
+        filter: contrast(60%); // 画像のコントラストを調整（グレー掛けのために記載）    
+    }
+
+    &__contents {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        margin: 3rem auto 0;
+        padding: 3rem;
+        background-color: rgba(0,0,0,0.3);
+        color: white;
+        h2 {
+            margin: 2rem 0;
+            font-size: 3rem;
+            font-weight: normal;
+            line-height: 4rem;
+        }
+        p {
+            font-size: 1.5rem;
+            line-height: 3rem;
+        }
+    
+    }
+}

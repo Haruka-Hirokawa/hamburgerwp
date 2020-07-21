@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.c-quote {
+    display: block;
+    margin: auto;
+    padding: 2rem 1rem;
+    width: 90%;
+    background-color: #F5F5F5;
+    color: $text-brown;
+    font-size: 1.3rem;
+    p {
+        line-height: 2rem;
+    }
+    p + p  { // pタグ直後のpタグ
+        margin: 3rem 0 2rem;
+        a {
+            text-decoration: underline
+        }
+    }
+}
