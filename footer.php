@@ -8,7 +8,7 @@
             <p><small>&copy; Raise Tech</small></p>
         </div>
     </footer>
-
+    <?php wp_footer(); ?>
     <script src="script.js"></script>
 </body>
 </html>

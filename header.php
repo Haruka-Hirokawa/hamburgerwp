@@ -12,10 +12,11 @@
     <script src="https://kit.fontawesome.com/22e109cfd0.js" crossorigin="anonymous"></script>
     
     <title>ハンバーガーサイト</title>
+    <?php wp_head(); ?>
 </head>
 
 
-<body>
+<body <?php body_class(); ?>>
     <!-- .l-main(ヘッダーからフッターの前までの部分)＋.l-sidebar(サイドバー部分)をグルーピング -->
     <div class="l-container">        
 
@@ -24,16 +25,11 @@
                 <!-- メニューボタン（サイドバー表示用） -->
                 <button class="l-sidebar-button--open" id="sidebar-button--open"><h2>Menu</h2></button>
                 
-                <h1 class="l-header__sitename">Hamburger</h1>
+                <h1 class="l-header__sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 
-                <form action="#" method="get" name="searchform" id="searchform" class="l-header__searchform">
-                    <input type="search" name="s" value="" name="keywords" id="keywords" class="l-header__searchform__keywords">
-                    <label for="keywords">検索ワード<!-- ←labelの内容 省略不可 --></label>
-                    <!-- ↑label for…文字列“検索ワード”が何なのかをブラウザに教える -->
-                    
-                    <input type="submit" value="検索" name="searchbutton" id="searchbutton" class="l-header__searchform__searchbutton">
-                    <label for="searchbutton">検索ボタン<!-- ←labelの内容 省略不可 --></label>
-                    <!-- ↑label for…文字列“検索ボタン”が何なのかをブラウザに教える -->
-                </form>
+
+                <!-- 検索フォーム -->
+                <?php get_search_form(); ?>
+
                 
             </header>
