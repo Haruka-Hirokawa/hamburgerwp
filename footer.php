@@ -9,6 +9,6 @@
         </div>
     </footer>
     <?php wp_footer(); ?>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
