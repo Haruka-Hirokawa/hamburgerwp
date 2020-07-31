@@ -12,14 +12,14 @@ Text Domain: hamburgerwp
 */
 
 /*
-  Theme Name:     //テーマの名前
+  Theme Name:     //テーマの名前（必須項目。最低限この記述があればテーマは認識される）
   Description:    //テーマの説明
   Version:        //バージョン
   Theme URI:      //テーマの URL
   Author:         //作った人の名前
   Author URI:     //作った人の URL
   Tags:           //テーマのタイプ
-  License:        //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPLになります。）
+  License:        //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPL。）
   License URI:    //ライセンスの URL
-  Text Domain:    //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
+  Text Domain:    //テキストドメイン（これも記載した方が良い。翻訳させたい箇所を指示する際に使用。テーマディレクトリ名を記載。）
 */
