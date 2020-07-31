@@ -17,7 +17,11 @@
                 <!-- メニューボタン（サイドバー表示用） -->
                 <button class="l-sidebar-button--open" id="sidebar-button--open"><h2>Menu</h2></button>
                 
-                <h1 class="l-header__sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+                <?php if( is_home() || is_front_page() ) : ?>
+                    <h1 class="l-header__sitename"><?php bloginfo( 'name' ); ?></h1>
+                <?php else : ?>
+                    <p class="l-header__sitename"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></p>
+                <?php endif; ?>
 
 
                 <!-- 検索フォーム -->

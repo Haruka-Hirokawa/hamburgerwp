@@ -22,3 +22,13 @@
         wp_enqueue_script( 'scriptjs', get_template_directory_uri() . '/script.js', array(), '1.0.0', true );
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
+
+    // function post_has_archive( $args, $post_type ) {
+    //     if ( 'post' == $post_type ) {
+    //         $args['rewite'] = true;
+    //         $args['has_archive'] = 'categoty/takeout';
+    //     }
+    //     return $args;
+    // }
+    // add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
