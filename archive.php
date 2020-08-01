@@ -1,17 +1,17 @@
 <?php get_header(); ?>
 
+            
             <div class="p-topimage02">
                 <img src="<?php bloginfo('template_url'); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
-                <h1 class="p-topimage02__title">Menu:<br><span>
                 <?php
-                    $category = get_the_category();
-                    $cat_id   = $category[0]->cat_ID;
-                    $cat_name = $category[0]->cat_name;
-                    $cat_slug = $category[0]->category_nicename;
+                    //ページ情報の取得
+                    $page = get_page(get_the_ID());
+                    //上で取得したページ情報からスラッグ名を取得
+                    $slug = $page->post_name; //固定ページからスラッグを取得し、変数$slugに代入する
                 ?>
-                <?php echo $cat_slug; ?>
-                </span></h1>
+                <h1 class="p-topimage02__title">Menu:<br><span><?php echo $slug; ?></span></h1>
             </div>
+            
 
             <div class="p-lead">
                 <h2>小見出しが入ります</h2>
