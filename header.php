@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <?php if( is_user_logged_in() ) : ?>
+    <style type="text/css">
+    .l-header, .l-sidebar {
+        margin-top: 4rem;
+    }
+    </style>
+    <?php endif; ?>
+
     <?php wp_head(); ?>
 </head>
 

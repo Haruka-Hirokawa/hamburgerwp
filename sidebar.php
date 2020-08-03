@@ -9,7 +9,7 @@
             <h2 class="l-sidebar__title">Menu</h2>
 
 
-            <?php wp_nav_menu(); ?>
+            <?php wp_nav_menu( array( 'menu_class' => 'p-globalmenu' ) ); ?>
             
             
         </div><!-- .l-sidebar -->

@@ -3,13 +3,9 @@
             
             <div class="p-topimage02">
                 <img src="<?php bloginfo('template_url'); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
-                <?php
-                    //ページ情報の取得
-                    $page = get_page(get_the_ID());
-                    //上で取得したページ情報からスラッグ名を取得
-                    $slug = $page->post_name; //固定ページからスラッグを取得し、変数$slugに代入する
-                ?>
-                <h1 class="p-topimage02__title">Menu:<br><span><?php echo $slug; ?></span></h1>
+                <?php if(is_category()) : ?>
+                <h1 class="p-topimage02__title">Menu:<br><span><?php single_cat_title(); ?></span></h1>
+                <? endif; ?>
             </div>
             
 
@@ -23,7 +19,7 @@
             <ul>
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>                   
                 <li class="c-card">                    
-                    <?php the_post_thumbnail('medium'); ?>
+                    <?php the_post_thumbnail('', array('class' => 'c-card__img')); ?>
                     <dl class="c-card__contents">
                         <dt><?php the_title(); ?></dt>
                         <dd><?php the_excerpt(); ?></dd>
@@ -33,9 +29,11 @@
                     </dl>
                     
                 </li>       
-                <?php endwhile; ?>            
+                <?php endwhile; else: ?>
+                <p>表示する記事がありません</p>
+                <?php endif; ?>           
             </ul>
-            <?php endif; ?> 
+             
 
 
 
@@ -80,7 +78,28 @@
                 <button>次へ ＞＞</button>
             </div>
 
-            <div class="p-pagination--tablet">
+            
+            
+            <?php if(function_exists("wp_pagenavi")): ?>
+            <?php wp_pagenavi(); ?>
+            <?php else: ?>
+            <?php endif; ?>
+            
+
+            <!-- <div class='wp-pagenavi' role='navigation'>
+                <span class='pages'>1 / 6</span>
+                <span aria-current='page' class='current'>1</span>
+                <a class="page larger" title="Page 2" href="http://hamburgerwp.local/category/takeout/page/2/">2</a>
+                <a class="page larger" title="Page 3" href="http://hamburgerwp.local/category/takeout/page/3/">3</a>
+                <a class="page larger" title="Page 4" href="http://hamburgerwp.local/category/takeout/page/4/">4</a>
+                <a class="page larger" title="Page 5" href="http://hamburgerwp.local/category/takeout/page/5/">5</a>
+                <span class='extend'>...</span>
+                <a class="nextpostslink" rel="next" href="http://hamburgerwp.local/category/takeout/page/2/">»</a>
+                <a class="last" href="http://hamburgerwp.local/category/takeout/page/6/">最後 »</a>
+            </div>                         -->
+
+
+            <!-- <div class="p-pagination--tablet">
                 <p>page 1/10</p>
                 <button class="p-pagination--tablet__pointer">＜＜</button>
                 <button class="p-pagination--tablet__button">1</button>
@@ -93,7 +112,7 @@
                 <button class="p-pagination--tablet__button">8</button>
                 <button class="p-pagination--tablet__button">9</button>
                 <button class="p-pagination--tablet__pointer">＞＞</button> 
-            </div>
+            </div> -->
             
         </div><!-- .l-main -->
 

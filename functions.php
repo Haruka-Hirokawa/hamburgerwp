@@ -4,7 +4,16 @@
 
     add_theme_support( 'title-tag' ); // <title>タグを<head>タグに挿入
     
-    // ページごとのタイトルタグの条件分岐タグを挿入？
+    // ページごとのタイトルタグの条件分岐タグを挿入？表示はどう変わる？
+    // function humburger_title($title){
+    //     if(is_front_page() && is_home()){
+    //         $title = get_bloginfo('name','display');
+    //     }elseif(is_singular()){
+    //         $title = single_post_title('',false);
+    //     }
+    //     return $title;
+    // }
+    // add_filter('pre_get_document_title','humburger_title' );
 
     add_theme_support( 'post-thumbnails' );
 
@@ -24,11 +33,9 @@
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
 
-    // function post_has_archive( $args, $post_type ) {
-    //     if ( 'post' == $post_type ) {
-    //         $args['rewite'] = true;
-    //         $args['has_archive'] = 'categoty/takeout';
-    //     }
-    //     return $args;
-    // }
-    // add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+    // アイキャッチ画像のimgタグへのサイズ指定を削除
+    add_filter( 'post_thumbnail_html', 'custom_attribute' );
+    function custom_attribute( $html ){
+        $html = preg_replace('/(width|height)="\d*"\s/', '', $html); // width height を削除する
+        return $html;
+    }
