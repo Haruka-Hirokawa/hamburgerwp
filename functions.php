@@ -41,6 +41,7 @@
     }
 
 
-    // remove_filter('term_description','wpautop'); // カテゴリやタグ概要につくPタグを無効にする
-    
     remove_filter('the_excerpt', 'wpautop'); // 抜粋の自動整形を無効にする
+
+    remove_filter( 'pre_term_description', 'wp_filter_kses' ); // カテゴリー、タグの説明文でhtmlを使えるようにする
+    
