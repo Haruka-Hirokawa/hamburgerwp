@@ -7,7 +7,7 @@
     <?php if( is_user_logged_in() ) : ?>
     <style type="text/css">
     .l-header, .l-sidebar {
-        margin-top: 4rem;
+        margin-top: 3.2rem;
     }
     </style>
     <?php endif; ?>

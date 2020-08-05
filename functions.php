@@ -39,3 +39,8 @@
         $html = preg_replace('/(width|height)="\d*"\s/', '', $html); // width height を削除する
         return $html;
     }
+
+
+    remove_filter('term_description','wpautop'); // カテゴリやタグ概要につくPタグを無効にする
+    
+    // remove_filter('the_excerpt', 'wpautop'); // 抜粋の自動整形を無効にする
