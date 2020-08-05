@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- WordPressにログインしている時のみ、ページ最上部に余白を作り、ヘッダー・サイドバーと管理バー（admin-bar）とが重ならないようにする -->
     <?php if( is_user_logged_in() ) : ?>
     <style type="text/css">
     .l-header, .l-sidebar {
