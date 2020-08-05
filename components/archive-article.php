@@ -1,7 +1,12 @@
             <ul>
                 <?php if(have_posts()): while(have_posts()): the_post(); ?>                   
-                <li class="c-card">                    
-                    <?php the_post_thumbnail('', array('class' => 'c-card__img')); ?> <!-- アイキャッチ画像にクラス名を取得 -->                    
+                <li class="c-card">
+                    <?php if(has_post_thumbnail()) { ?>
+                        <?php the_post_thumbnail('', array('class' => 'c-card__img')); ?> 
+                    <?php } else { ?>
+                         <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="no-image" class="c-card__img">
+                    <?php } ?>                                           
+                                            
                     <dl class="c-card__contents">
                         <dt><?php the_title(); ?></dt>
                         <dd><?php the_excerpt(); ?></dd>
@@ -12,7 +17,7 @@
                     
                 </li>       
                 <?php endwhile; else: ?>
-                <p>お探しの商品はありません</p>
+                <p>お探しの商品は見つかりませんでした</p>
                 <?php endif; ?>           
             </ul>
              
