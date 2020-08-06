@@ -10,9 +10,7 @@
                     <dl class="c-card__contents">
                         <dt><?php the_title(); ?></dt>
                         <dd><?php the_excerpt(); ?></dd>
-                        <a href="<?php the_permalink(); ?>">
-                            <button type="button" onclick="location.href='#'" class="c-card__contents__button">詳しく見る</button>
-                        </a>                       
+                        <button type="button" onclick="location.href='<?php the_permalink(); ?>'" class="c-card__contents__button">詳しく見る</button>
                     </dl>
                     
                 </li>       
