@@ -1,23 +1,24 @@
+@import "../../variables";
+
 .p-globalmenu {
     margin-top: 10rem;
     @include breakpoint( pc ) {
         margin-top: 0;
     }
 
-    &__list {
+
+    .menu-item-has-children {
         margin: 3rem 0;
-        h3 {
-            font-size: 1.7rem;
-            font-weight: normal;
+        font-size: 1.7rem;
+        font-weight: normal;
+        a {
+            color: $text-gray;
         }
 
-        &__detail {
+        .sub-menu {
             padding: 3rem;
             font-size: 1.5rem;
-            line-height: 3rem;
-            li a {
-                color: #707070;
-            }    
+            line-height: 3rem;    
         }
     }
 }

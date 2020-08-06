@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 li, dl, dt, dd {
   list-style: none;
 }
@@ -552,23 +556,20 @@ li, dl, dt, dd {
   }
 }
 
-.p-globalmenu__list {
+.p-globalmenu .menu-item-has-children {
   margin: 3rem 0;
-}
-
-.p-globalmenu__list h3 {
   font-size: 1.7rem;
   font-weight: normal;
 }
 
-.p-globalmenu__list__detail {
+.p-globalmenu .menu-item-has-children a {
+  color: #707070;
+}
+
+.p-globalmenu .menu-item-has-children .sub-menu {
   padding: 3rem;
   font-size: 1.5rem;
   line-height: 3rem;
-}
-
-.p-globalmenu__list__detail li a {
-  color: #707070;
 }
 
 .p-heading {
