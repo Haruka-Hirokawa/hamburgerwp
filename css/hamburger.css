@@ -625,6 +625,9 @@ li, dl, dt, dd {
   justify-content: space-between;
   margin: 5rem auto 3rem;
   width: 90%;
+}
+
+.p-pagination--sp button {
   color: #707070;
   font-size: 1.5rem;
 }
