@@ -20,6 +20,13 @@
         padding: 3rem;
         background-color: rgba(0,0,0,0.3);
         color: white;
+        @include breakpoint( tablet ) {
+            height: 95.3%; // 100%にするとなぜか下にはみ出るので、はみ出ない値で調整
+        }
+        @include breakpoint( pc ) {
+            width: 50%;
+            height: 100%;
+        }
         h2 {
             margin: 2rem 0;
             font-size: 3rem;
