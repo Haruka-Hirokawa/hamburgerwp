@@ -14,7 +14,11 @@
         text-align: center;
         @include breakpoint( pc ) {
             margin: 5%;           
-        }   
+        } 
+        a {
+            color: $text-gray;
+            font-family: 'Roboto', sans-serif;
+        }  
     }
 
     &__searchform {
