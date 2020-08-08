@@ -14,14 +14,15 @@
         position: relative;
         
         img{
-            width: 95%;
+            width: 90%;
             margin: 1rem 0;
+            
         }
         h2 {
             position: absolute;
             top: 5%;
-            left: 8%;
-            transform: translate(-8%,-5%);
+            left: 10%;
+            transform: translate(-10%,-5%);
             margin: 0;
             padding: 0;
             color: white;
@@ -33,27 +34,37 @@
         &__contents01 {
             position: absolute;
             top: 50%;
-            left: 0;
+            left: 5%;
+            right: 5%;
             transform: translate(0,-50%);
             margin: 0;
             padding: 0;
-            height: 23%;
+            height: 28%;
             margin: 1.5rem;
             padding: 1rem;
-            background-color: rgba(255,255,255,0.5);  
+            background-color: rgba(255,255,255,0.5);
+            overflow-y: scroll; // 入りきらなかった内容をスクロールバーで表示させる    
+            &::-webkit-scrollbar {
+                display: none;
+            } // スクロールバーを消す。ただしFirefoxやIE等は非対応
         }
 
         &__contents02 {
             position: absolute;
             top: 85%;
-            left: 0;
-            transform: translate(0,-73%);
+            left: 5%;
+            right: 5%;
+            transform: translate(0,-70%);
             margin: 0;
             padding: 0;
-            height: 23%;
+            height: 28%;
             margin: 1.5rem;
             padding: 1rem;
             background-color: rgba(255,255,255,0.5);
+            overflow-y: scroll; // 入りきらなかった内容をスクロールバーで表示させる    
+            &::-webkit-scrollbar {
+                display: none;
+            } // スクロールバーを消す。ただしFirefoxやIE等は非対応
         }
 
         dt {
