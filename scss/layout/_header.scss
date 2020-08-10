@@ -3,7 +3,7 @@
 .l-header {
     @include breakpoint( pc ) {
         display: flex;
-        justify-content: space-between;       
+        justify-content: space-between;
     }
 
     &__sitename {
@@ -13,7 +13,7 @@
         font-family: 'Roboto', sans-serif;
         text-align: center;
         @include breakpoint( pc ) {
-            margin: 5%;           
+            margin: 4rem;           
         } 
         a {
             color: $text-gray;
@@ -26,7 +26,7 @@
         margin-bottom: 4rem;
         text-align: center;
         @include breakpoint( pc ) {
-            margin: 5% 3%;           
+            margin: 4rem 2rem;           
         }
 
         input {
