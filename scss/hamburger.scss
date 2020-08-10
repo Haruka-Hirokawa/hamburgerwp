@@ -11,8 +11,8 @@
 
 @import "layout/_container";
 @import "layout/_footer";
-@import "layout/_sidebar";
 @import "layout/_header";
+@import "layout/_sidebar";
 
 
 // ==========================================================================
@@ -28,9 +28,7 @@
 @import "object/component/_card";
 @import "object/component/_gridContents";
 @import "object/component/_gridImages";
-@import "object/component/_img";
 @import "object/component/_list";
-@import "object/component/_quote";
 @import "object/component/_table";
 @import "object/component/_tag";
 
@@ -41,8 +39,8 @@
 
 @import "object/project/_access";
 @import "object/project/_branchmenu";
+@import "object/project/_editor-style";
 @import "object/project/_globalmenu";
-@import "object/project/_heading";
 @import "object/project/_lead";
 @import "object/project/_pagination";
 @import "object/project/_topimage";

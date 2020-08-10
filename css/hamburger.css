@@ -362,25 +362,6 @@ li, dl, dt, dd {
   }
 }
 
-.c-img--large {
-  margin: 3rem 0;
-}
-
-.c-img--large img {
-  display: block;
-  margin: auto;
-  width: 90%;
-}
-
-.c-img--small {
-  margin: 3rem 0;
-}
-
-.c-img--small img {
-  display: block;
-  margin: auto;
-}
-
 .c-list {
   color: #3C2A10;
   font-size: 1.5rem;
@@ -399,28 +380,6 @@ li, dl, dt, dd {
   list-style-type: decimal;
   /* リストの左側に数字 */
   list-style-position: inside;
-}
-
-.wp-block-quote {
-  display: block;
-  margin: auto;
-  padding: 2rem 1rem;
-  width: 90%;
-  background-color: #F5F5F5;
-  color: #3C2A10;
-  font-size: 1.3rem;
-}
-
-.wp-block-quote p {
-  line-height: 2rem;
-}
-
-.wp-block-quote cite {
-  margin: 3rem 0 2rem;
-}
-
-.wp-block-quote cite a {
-  text-decoration: underline;
 }
 
 .wp-block-table {
@@ -589,6 +548,73 @@ li, dl, dt, dd {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #3C2A10;
+}
+
+.p-editor-style h2 {
+  display: block;
+  margin: auto;
+  padding: 3rem 0;
+  width: 90%;
+  color: #3C2A10;
+  font-size: 2.5rem;
+}
+
+.p-editor-style h3 {
+  display: block;
+  margin: auto;
+  padding: 3rem 0;
+  width: 90%;
+  color: #3C2A10;
+  font-size: 1.7rem;
+}
+
+.p-editor-style h4, .p-editor-style h5, .p-editor-style h6 {
+  display: block;
+  margin: auto;
+  padding: 3rem 0;
+  width: 90%;
+  color: #3C2A10;
+  font-size: 1.5rem;
+}
+
+.p-editor-style p {
+  display: block;
+  margin: auto;
+  padding: 3rem 0;
+  width: 90%;
+  color: #3C2A10;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.wp-block-quote {
+  display: block;
+  margin: auto;
+  padding: 2rem 1rem;
+  width: 90%;
+  background-color: #F5F5F5;
+  color: #3C2A10;
+  font-size: 1.3rem;
+}
+
+.wp-block-quote p {
+  line-height: 2rem;
+}
+
+.wp-block-quote cite {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+.wp-block-image {
+  margin: 3rem 0;
+}
+
+.wp-block-image img {
+  display: block;
+  margin: auto;
+  width: 90%;
 }
 
 .p-globalmenu {

@@ -1,0 +1,65 @@
+@import "../../variables";
+
+@mixin text-decoration {
+    display: block;
+    margin: auto;
+    padding: 3rem 0;
+    width: 90%;
+    color: $text-brown;
+}
+
+.p-editor-style {
+    h2{
+        @include text-decoration;
+        font-size: 2.5rem;    
+    }
+
+    h3 {
+        @include text-decoration;
+        font-size: 1.7rem;
+    }
+
+    h4, h5, h6 {
+        @include text-decoration;
+        font-size: 1.5rem;
+    }
+
+    p {
+        @include text-decoration;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }    
+}
+
+
+// ↓引用部分
+.wp-block-quote {
+    display: block;
+    margin: auto;
+    padding: 2rem 1rem;
+    width: 90%;
+    background-color: #F5F5F5;
+    color: $text-brown;
+    font-size: 1.3rem;
+    p {
+        line-height: 2rem;
+    }
+    cite {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+}
+// ↑引用部分
+
+
+// ↓写真(大)
+.wp-block-image {
+    margin: 3rem 0;
+    img {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+}
+// ↑写真(大)

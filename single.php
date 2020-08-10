@@ -11,7 +11,9 @@
                 <h1 class="p-topimage01__title"><?php the_title(); ?></h1>
             </div>
 
-            <?php the_content(); ?>
+            <div class="p-editor-style">
+                <?php the_content(); ?>
+            </div>
             
             <?php endwhile; else: ?>
             <?php endif; ?>
@@ -28,4 +30,14 @@
     <?php get_footer(); ?>
 
 
-    <!-- <img src="http://hamburgerwp.local/wp-content/uploads/2020/07/side_potate.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="フライドポテト" srcset="http://hamburgerwp.local/wp-content/uploads/2020/07/side_potate.jpg 640w, http://hamburgerwp.local/wp-content/uploads/2020/07/side_potate-300x200.jpg 300w" sizes="(max-width: 640px) 100vw, 640px"> -->
+    
+    <!-- post-template-default single single-post postid-18 single-format-standard logged-in admin-bar  customize-support -->
+
+    <!-- page-template-default page page-id-17 logged-in admin-bar  customize-support -->
+
+    <!-- wp-admin wp-core-ui js post-php auto-fold admin-bar post-type-post branch-5-4 version-5-4-2 admin-color-fresh locale-ja block-editor-page is-fullscreen-mode wp-embed-responsive customize-support svg sticky-menu -->
+
+
+    <!-- home blog logged-in admin-bar  customize-support -->
+
+    <!-- archive category category-takeout category-3 logged-in admin-bar  customize-support -->
