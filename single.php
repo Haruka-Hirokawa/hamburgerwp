@@ -2,11 +2,11 @@
 
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-            <div class="p-topimage01">
+            <div class="p-topimage03">
             <?php if(has_post_thumbnail()) { ?>
                         <?php the_post_thumbnail(); ?> 
                     <?php } else { ?>
-                         <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="no-image" class="c-card__img">
+                         <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="no-image">
                     <?php } ?>
                 <h1 class="p-topimage01__title"><?php the_title(); ?></h1>
             </div>

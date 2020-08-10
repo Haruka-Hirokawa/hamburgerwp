@@ -30,7 +30,7 @@
         font-weight: normal;
     }
 }
-// ↑frontpage、single、pageトップ画像
+// ↑frontpageトップ画像
 
 
 // ↓archive、archive_searchトップ画像
@@ -45,7 +45,6 @@
         width:100%;
         height: 25rem;
         object-fit: none; // リサイズせず元の画像の大きさで表示
-        object-position: 30% 0; // 画像を中央以外の位置でトリミング。左上を基準にして、: 横の位置 縦の位置;
         
         // filter: contrast(50%); // 画像のコントラストを調整（グレー掛けのために記載←コードは簡単だがあまり綺麗な色が出ない…）
 
@@ -71,3 +70,30 @@
     }
 }
 // ↑archive、archive_searchトップ画像
+
+
+// ↓single、pageトップ画像
+.p-topimage03 { /*親div*/
+    position: relative; /*相対配置*/
+    margin: 1rem 0;
+               
+    img {
+        width:100%;
+        height: 25rem;
+        object-fit: cover;
+        // object-position: 0 5%; // 画像を中央以外の位置でトリミング。左上を基準にして、: 横の位置 縦の位置;       
+    }
+
+    &__title {
+        position: absolute; /*絶対配置*/
+        top: 50%;
+        left: 5%;
+        transform: translate(-5%,-50%);
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+// ↑single、pageトップ画像
