@@ -20,6 +20,7 @@
 
     function hamburger_script() {
         wp_enqueue_style( 'Roboto', '//fonts.googleapis.com/css2?family=Roboto&display=swap', array() );
+        wp_enqueue_style( 'M_PLUS_1p', '///fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap', array() );
         wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.14.0/css/all.css', array(), '5.14.0');
         wp_enqueue_style( 'ress', '//unpkg.com/ress/dist/ress.min.css', array() );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/hamburger.css', array(), '1.0.0' );
@@ -43,3 +44,11 @@
 
     remove_filter( 'pre_term_description', 'wp_filter_kses' ); // カテゴリー、タグの説明文でhtmlを使えるようにする
     
+
+    // Gutenberg用のCSSを読み込み、ビジュアルエディターを見やすくする
+    add_action( 'enqueue_block_editor_assets', 'gutenberg_stylesheets_custom_demo' );
+    function gutenberg_stylesheets_custom_demo() {
+        //現在適用しているテーマのeditor-style.cssを読み込む
+        $editor_style_url = get_theme_file_uri('/css/editor-style.css');
+        wp_enqueue_style( 'theme-editor-style', $editor_style_url );
+    }
