@@ -17,8 +17,7 @@
 
     @include breakpoint( pc ) {
         position: static; // position: absolute/fixed/relative;の指定を外す
-        width: 25%;
-
+        
         padding-bottom: 10000px;
         margin-bottom: -10000px;
         // 上記２行 _container.scssの overflow:hidden;とセット サイドバーとメインコンテンツの高さを合わせる
