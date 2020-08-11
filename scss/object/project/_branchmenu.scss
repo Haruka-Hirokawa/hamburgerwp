@@ -12,10 +12,19 @@
         display: flex;
         justify-content: center;
         position: relative;
+
+        &:hover {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 1;
+        }
         
         img{
             width: 90%;
             margin: 1rem 0;
+
+            
             
         }
         h2 {
