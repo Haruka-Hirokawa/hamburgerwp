@@ -81,7 +81,7 @@ li, dl, dt, dd {
 }
 
 .l-header__sitename {
-  margin: 2rem 0 4rem 0;
+  margin-bottom: 5rem;
   color: #707070;
   font-size: 4rem;
   font-family: 'Roboto', sans-serif;
@@ -90,7 +90,7 @@ li, dl, dt, dd {
 
 @media (min-width: 769px) {
   .l-header__sitename {
-    margin: 4rem;
+    padding: 5rem;
   }
 }
 
@@ -107,7 +107,7 @@ li, dl, dt, dd {
 
 @media (min-width: 769px) {
   .l-header__searchform {
-    margin: 4rem 2rem;
+    padding: 5rem 1rem;
   }
 }
 
@@ -208,8 +208,7 @@ li, dl, dt, dd {
 .l-sidebar-button--open {
   display: block;
   margin: 0 0 0 auto;
-  margin-top: 8%;
-  margin-right: 5%;
+  padding: 5%;
   color: #707070;
   font-size: 1.3rem;
   font-family: 'Roboto', sans-serif;
@@ -774,7 +773,7 @@ li, dl, dt, dd {
   /*親div*/
   position: relative;
   /*相対配置*/
-  margin: 1rem 0;
+  vertical-align: top;
   height: 24rem;
   background-color: #000;
 }
@@ -809,7 +808,7 @@ li, dl, dt, dd {
   /*親div*/
   position: relative;
   /*相対配置*/
-  margin: 1rem 0;
+  vertical-align: top;
 }
 
 .p-topimage03 img {

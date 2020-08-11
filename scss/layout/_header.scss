@@ -1,19 +1,20 @@
 @import "../variables";
 
 .l-header {
+    background-color: #FFF7EF;
     @include breakpoint( pc ) {
         display: flex;
         justify-content: space-between;
     }
 
     &__sitename {
-        margin: 2rem 0 4rem 0;
+        margin-bottom: 5rem;
         color: $text-gray;
         font-size: 4rem;
         font-family: 'Roboto', sans-serif;
         text-align: center;
         @include breakpoint( pc ) {
-            margin: 4rem;           
+            padding: 5rem;           
         } 
         a {
             color: $text-gray;
@@ -23,10 +24,10 @@
 
     &__searchform {
         height: 3rem;
-        margin-bottom: 4rem;
+        padding-bottom: 8rem;
         text-align: center;
         @include breakpoint( pc ) {
-            margin: 4rem 2rem;           
+            padding: 5rem 1rem;           
         }
 
         input {
@@ -44,7 +45,8 @@
             padding: 1rem 1rem 1rem 3.5rem;
             border: 1px solid #707070;
             border-radius: 1rem;
-            background: url(../images/searchform_loupe.png) no-repeat 8px;
+            background: white url(../images/searchform_loupe.png) no-repeat 8px;
+            // 背景関連のプロパティを纏めて指定
             font-size: 1.5rem;
         }
 

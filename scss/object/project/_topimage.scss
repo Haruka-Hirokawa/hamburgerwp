@@ -1,13 +1,12 @@
 // ↓frontpage、single、pageトップ画像
 .p-topimage01 { /*親div*/
     position: relative; /*相対配置*/
-    margin: 1rem 0;
     
     img {
         width:100%;
+        vertical-align: top;
     }
     &--sp {
-        display: block;
         @include breakpoint( pc ) {
             display: none;
         }
@@ -36,10 +35,11 @@
 // ↓archive、archive_searchトップ画像
 .p-topimage02 { /*親div*/
     position: relative; /*相対配置*/
-    margin: 1rem 0;
+    vertical-align: top;
 
     height: 24rem; // background-colorがimgよりはみ出さないように高さを調整
     background-color: #000;
+    
                
     img {
         width:100%;
@@ -75,7 +75,7 @@
 // ↓single、pageトップ画像
 .p-topimage03 { /*親div*/
     position: relative; /*相対配置*/
-    margin: 1rem 0;
+    vertical-align: top;
                
     img {
         width:100%;
