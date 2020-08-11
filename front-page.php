@@ -11,8 +11,8 @@
                 <ul>
                     <li>
                         <a href="<?php echo get_category_link( '3' ); ?>">
-                            <div class="p-branchmenu__list">
-                                <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_takeout.jpg">
+                            <div class="p-branchmenu__list">                       
+                                <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_takeout.jpg">                           
                                 <h2>Take Out<br>－</h2>
                                 <dl class="p-branchmenu__list__contents01">
                                     <dt>小見出しが入ります</dt>
@@ -25,12 +25,12 @@
                                     <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                         テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                                     </dd>
-                                </dl>
+                                </dl>                            
                             </div>
                         </a>
                     </li>
             
-                    <li class="p-branchmenu__list">
+                    <li>
                         <a href="<?php echo get_category_link( '2' ); ?>">
                             <div class="p-branchmenu__list">
                                 <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_eatin.jpg">
