@@ -69,6 +69,10 @@ li, dl, dt, dd {
   margin-top: 3rem;
 }
 
+.l-header {
+  background-color: #FFF7EF;
+}
+
 @media (min-width: 769px) {
   .l-header {
     display: flex;
@@ -122,7 +126,7 @@ li, dl, dt, dd {
   padding: 1rem 1rem 1rem 3.5rem;
   border: 1px solid #707070;
   border-radius: 1rem;
-  background: url(../images/searchform_loupe.png) no-repeat 8px;
+  background: white url(../images/searchform_loupe.png) no-repeat 8px;
   font-size: 1.5rem;
 }
 
@@ -184,7 +188,9 @@ li, dl, dt, dd {
     display: block;
     margin: 3rem 0;
     padding-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
   }
 }
 
@@ -205,6 +211,9 @@ li, dl, dt, dd {
   margin-top: 8%;
   margin-right: 5%;
   color: #707070;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 
 @media (min-width: 769px) {
