@@ -490,17 +490,11 @@ li, dl, dt, dd {
   position: relative;
 }
 
-.p-branchmenu__list:hover {
-  opacity: 0.6;
-}
-
-.p-branchmenu__list:active {
-  opacity: 1;
-}
-
 .p-branchmenu__list img {
+  display: block;
+  margin: auto;
   width: 90%;
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .p-branchmenu__list h2 {

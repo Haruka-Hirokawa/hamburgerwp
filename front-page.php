@@ -9,45 +9,41 @@
 
             <div class="p-branchmenu">
                 <ul>
-                    <li>
-                        <a href="<?php echo get_category_link( '3' ); ?>">
-                            <div class="p-branchmenu__list">                       
-                                <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_takeout.jpg">                           
-                                <h2>Take Out<br>－</h2>
-                                <dl class="p-branchmenu__list__contents01">
-                                    <dt>小見出しが入ります</dt>
-                                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </dd>                                    
-                                </dl>
-                                <dl class="p-branchmenu__list__contents02">
-                                    <dt>小見出しが入ります</dt>
-                                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </dd>
-                                </dl>                            
-                            </div>
+                    <li class="p-branchmenu__list">
+                        <a href="<?php echo get_category_link( '3' ); ?>">                                                   
+                            <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_takeout.jpg">                           
+                            <h2>Take Out<br>－</h2>
+                            <dl class="p-branchmenu__list__contents01">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                </dd>                                    
+                            </dl>
+                            <dl class="p-branchmenu__list__contents02">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                </dd>
+                            </dl>
                         </a>
                     </li>
             
-                    <li>
+                    <li class="p-branchmenu__list">
                         <a href="<?php echo get_category_link( '2' ); ?>">
-                            <div class="p-branchmenu__list">
-                                <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_eatin.jpg">
-                                <h2>Eat In<br>－</h2>
-                                <dl class="p-branchmenu__list__contents01">
-                                    <dt>小見出しが入ります</dt>
-                                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </dd>
-                                </dl>
-                                <dl class="p-branchmenu__list__contents02">
-                                    <dt>小見出しが入ります</dt>
-                                    <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                                    </dd>
-                                </dl>
-                            </div>
+                            <img src="<?php bloginfo('template_url'); ?>/images/PCfrontpage_eatin.jpg">
+                            <h2>Eat In<br>－</h2>
+                            <dl class="p-branchmenu__list__contents01">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                </dd>
+                            </dl>
+                            <dl class="p-branchmenu__list__contents02">
+                                <dt>小見出しが入ります</dt>
+                                <dd>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                                </dd>
+                            </dl>
                         </a>
                     </li>
                 </ul>
