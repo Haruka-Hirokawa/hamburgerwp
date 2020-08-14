@@ -5,7 +5,7 @@
                 <img src="<?php bloginfo('template_url'); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
                 <?php if(is_category()) : ?>
                 <h1 class="p-topimage02__title">Menu:<br><span><?php single_cat_title(); ?></span></h1>
-                <? endif; ?>
+                <?php endif; ?>
             </div>
             
 
