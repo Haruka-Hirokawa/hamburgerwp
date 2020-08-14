@@ -16,6 +16,7 @@
             </div>
             
             <?php endwhile; else: ?>
+                <p>お探しの商品の詳細はありません</p>
             <?php endif; ?>
             
         </div><!-- .l-main -->
