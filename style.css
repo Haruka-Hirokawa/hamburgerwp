@@ -4,11 +4,12 @@ Description: テーマ開発練習用テーマ
 Version: 1.0.0
 Theme URI: https://github.com/Haruka-Hirokawa/hamburgerwp
 Author: Haruka Hirokawa
-Author URI: 
-Tags: 
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: hamburgerwp
+
+Tested up to: 5.5
+Requires PHP: 7.3.5
 */
 
 /*
@@ -17,8 +18,6 @@ Text Domain: hamburgerwp
   Version:        //バージョン
   Theme URI:      //テーマの URL
   Author:         //作った人の名前
-  Author URI:     //作った人の URL
-  Tags:           //テーマのタイプ
   License:        //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPL。）
   License URI:    //ライセンスの URL
   Text Domain:    //テキストドメイン（これも記載した方が良い。翻訳させたい箇所を指示する際に使用。テーマディレクトリ名を記載。）

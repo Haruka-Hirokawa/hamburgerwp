@@ -52,3 +52,17 @@
         $editor_style_url = get_theme_file_uri('/css/editor-style.css');
         wp_enqueue_style( 'theme-editor-style', $editor_style_url );
     }
+
+
+    // テーマチェック：待機状態のコメント返信のスクリプトを見つけることができません。プラグインとテーマの移行/2.7/Enhanced Comment Displayをご覧ください。
+    function demo_script() {
+        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+            wp_enqueue_script( 'comment-reply' );
+        }
+    }
+    add_action( 'wp_enqueue_scripts', 'demo_script' );
+
+    // テーマチェック：コンテンツの幅が定義されていません。
+    if ( ! isset( $content_width ) ) $content_width = 525;
+
+    

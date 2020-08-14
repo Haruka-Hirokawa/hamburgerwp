@@ -221,13 +221,6 @@ li, dl, dt, dd {
   }
 }
 
-.bold {
-  margin-left: 5%;
-  margin-bottom: 5rem;
-  color: #3C2A10;
-  font-size: 1.2rem;
-}
-
 .c-card {
   margin-bottom: 2rem;
 }
@@ -617,7 +610,7 @@ li, dl, dt, dd {
 }
 
 .wp-block-buttons {
-  margin: 2rem 0 2rem 5%;
+  margin-left: 5%;
 }
 
 .wp-block-button__link {
@@ -858,5 +851,77 @@ li, dl, dt, dd {
   color: white;
   font-size: 3rem;
   font-family: 'Roboto', sans-serif;
+}
+
+.wp-caption {
+  font-size: 1.3rem;
+}
+
+.wp-caption-text {
+  margin-top: -20px;
+}
+
+.sticky {
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+.gallery-caption {
+  font-size: 1.3rem;
+}
+
+.bypostauthor {
+  padding: 20px;
+  background: #f0f8ff;
+}
+
+.alignleft {
+  display: block;
+  float: left;
+  margin-right: 1.5em;
+}
+
+.alignright {
+  display: block;
+  float: right;
+  margin-left: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
 }
 /*# sourceMappingURL=hamburger.css.map */
