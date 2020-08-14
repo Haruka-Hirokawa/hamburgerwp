@@ -5,10 +5,10 @@
     margin: auto;
     padding: 3rem 0;
     width: 90%;
-    color: $text-brown;
 }
 
 .p-editor-style {
+    color: $text-brown;
     h2{
         @include text-decoration;
         font-size: 2.5rem;    
@@ -28,7 +28,21 @@
         @include text-decoration;
         font-size: 1.5rem;
         line-height: 2.5rem;
-    }    
+    }
+    
+    ul, ol {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+        li{
+            margin-left: 5%; /* リストの左側に余白 */
+        }
+    }
+
+    ol li {       
+        list-style-type: decimal; /* リストの左側に数字 */
+        // ↑(リセットCSSは、基本的にli {list-style-type: none;}が指定されおり、)リストマーカーを表示するよう記載
+        list-style-position: inside; // マーカーがリスト内容の領域の内側に表示され、マーカーとマーカー以外の部分の高さが揃う       
+    }
 }
 
 
@@ -60,6 +74,117 @@
         display: block;
         margin: auto;
         width: 90%;
+        height: auto;
     }
 }
 // ↑写真(大)
+
+
+// ↓写真・コンテンツ 横並び
+.wp-block-media-text {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 90%;
+    color: $text-brown;
+    
+    &__media {
+        flex: 2;
+        img {
+            height: auto;
+            min-height: 10rem;
+        }   
+    }
+    &__content {
+        flex: 3;
+    }
+}
+// ↑写真・コンテンツ 横並び
+
+
+// ↓テーブル
+.wp-block-table {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    table {
+        margin: auto;
+        padding: 2rem 0;
+        width: 90%;
+        height: 30rem;
+        color: $text-brown;
+
+        tr td:first-child {
+            width: 30%;
+        }
+        td {
+            padding-left: 10%;
+            font-size: 1.5rem;
+        }
+    }
+
+    table, tr, td {
+        border-collapse: collapse; // 2重になっている線を重ねて1本にする
+        border: 1px solid $text-gray;
+    }
+    
+}
+// ↑テーブル
+
+
+// ↓コード
+.wp-block-code {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 3rem 0;
+    width: 90%;
+    height: auto;
+    background-color: #F5F5F5;
+    font-size: 1.2rem;
+    code {
+        margin-left: 5%;
+    }
+}
+// ↑コード
+
+
+// ↓ボタン
+.wp-block-buttons {
+    margin-left: 5%;
+}
+
+.wp-block-button {
+    &__link {
+        display: inline-block;
+        width: 90vw;
+        text-align: center;
+        padding: 2rem 0;
+        border: 1px solid $text-gray;
+        background-color: #F2EDE9;
+        background-image: url("https://daks2k3a4ib2z.cloudfront.net/535247a0560e86a20500080c/53498e45ba1095344a0005fa_arrow-right.svg");
+        background-position: 110% 50%;
+        background-size: auto 20%;
+        background-repeat: no-repeat;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        color: $text-brown;
+        letter-spacing: -1px; // 文字間の幅を調整
+        @include breakpoint( tablet ) {
+            width: 30rem;
+        }
+        &:hover {
+            width: 90vw;
+            border-color: #000;
+            background-color: #181818;
+            background-position: 95% 50%;
+            padding: 2rem 0;
+            color: #fff;
+            @include breakpoint( tablet ) {
+                width: 30rem;
+            }
+        }
+    }   
+}
+// ↑ボタン

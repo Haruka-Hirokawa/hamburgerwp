@@ -228,24 +228,6 @@ li, dl, dt, dd {
   font-size: 1.2rem;
 }
 
-.c-button {
-  display: block;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 90%;
-  padding: 2.5rem;
-  border: 1px solid #707070;
-  border-radius: 1.5rem;
-  background-color: #F2EDE9;
-  color: #3C2A10;
-  font-size: 1.5rem;
-}
-
-.c-button-label {
-  font-size: 0;
-}
-
 .c-card {
   margin-bottom: 2rem;
 }
@@ -312,26 +294,6 @@ li, dl, dt, dd {
   text-align: center;
 }
 
-.c-gridContents {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin: 0 auto;
-  padding: 2rem 0;
-  width: 90%;
-  color: #3C2A10;
-}
-
-.c-gridContents__picture img {
-  width: 90%;
-  height: auto;
-}
-
-.c-gridContents__text {
-  width: 130%;
-  font-size: 1.3rem;
-}
-
 @media (min-width: 641px) {
   .c-gridImages {
     display: grid;
@@ -368,61 +330,6 @@ li, dl, dt, dd {
   .c-gridImages__image img {
     width: 100%;
   }
-}
-
-.c-list {
-  color: #3C2A10;
-  font-size: 1.5rem;
-}
-
-.c-list ul, .c-list ol {
-  padding: 2rem 0;
-}
-
-.c-list ul li, .c-list ol li {
-  margin-left: 5%;
-  /* リストの左側に余白 */
-}
-
-.c-list ol li {
-  list-style-type: decimal;
-  /* リストの左側に数字 */
-  list-style-position: inside;
-}
-
-.wp-block-table {
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 90%;
-  height: 30rem;
-  border-color: #707070;
-  color: #3C2A10;
-}
-
-.wp-block-table tr td:first-child {
-  width: 40%;
-}
-
-.wp-block-table td {
-  padding-left: 10%;
-  font-size: 1.5rem;
-}
-
-.c-tag {
-  display: block;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding: 3rem 0;
-  width: 90%;
-  height: 20rem;
-  background-color: #F5F5F5;
-  font-size: 1.2rem;
-}
-
-.c-tag p {
-  margin-left: 10%;
 }
 
 .p-access {
@@ -560,12 +467,15 @@ li, dl, dt, dd {
   color: #3C2A10;
 }
 
+.p-editor-style {
+  color: #3C2A10;
+}
+
 .p-editor-style h2 {
   display: block;
   margin: auto;
   padding: 3rem 0;
   width: 90%;
-  color: #3C2A10;
   font-size: 2.5rem;
 }
 
@@ -574,7 +484,6 @@ li, dl, dt, dd {
   margin: auto;
   padding: 3rem 0;
   width: 90%;
-  color: #3C2A10;
   font-size: 1.7rem;
 }
 
@@ -583,7 +492,6 @@ li, dl, dt, dd {
   margin: auto;
   padding: 3rem 0;
   width: 90%;
-  color: #3C2A10;
   font-size: 1.5rem;
 }
 
@@ -592,9 +500,24 @@ li, dl, dt, dd {
   margin: auto;
   padding: 3rem 0;
   width: 90%;
-  color: #3C2A10;
   font-size: 1.5rem;
   line-height: 2.5rem;
+}
+
+.p-editor-style ul, .p-editor-style ol {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+.p-editor-style ul li, .p-editor-style ol li {
+  margin-left: 5%;
+  /* リストの左側に余白 */
+}
+
+.p-editor-style ol li {
+  list-style-type: decimal;
+  /* リストの左側に数字 */
+  list-style-position: inside;
 }
 
 .wp-block-quote {
@@ -625,6 +548,113 @@ li, dl, dt, dd {
   display: block;
   margin: auto;
   width: 90%;
+  height: auto;
+}
+
+.wp-block-media-text {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 90%;
+  color: #3C2A10;
+}
+
+.wp-block-media-text__media {
+  flex: 2;
+}
+
+.wp-block-media-text__media img {
+  height: auto;
+  min-height: 10rem;
+}
+
+.wp-block-media-text__content {
+  flex: 3;
+}
+
+.wp-block-table {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.wp-block-table table {
+  margin: auto;
+  padding: 2rem 0;
+  width: 90%;
+  height: 30rem;
+  color: #3C2A10;
+}
+
+.wp-block-table table tr td:first-child {
+  width: 30%;
+}
+
+.wp-block-table table td {
+  padding-left: 10%;
+  font-size: 1.5rem;
+}
+
+.wp-block-table table, .wp-block-table tr, .wp-block-table td {
+  border-collapse: collapse;
+  border: 1px solid #707070;
+}
+
+.wp-block-code {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 3rem 0;
+  width: 90%;
+  height: auto;
+  background-color: #F5F5F5;
+  font-size: 1.2rem;
+}
+
+.wp-block-code code {
+  margin-left: 5%;
+}
+
+.wp-block-buttons {
+  margin: 2rem 0 2rem 5%;
+}
+
+.wp-block-button__link {
+  display: inline-block;
+  width: 90vw;
+  text-align: center;
+  padding: 2rem 0;
+  border: 1px solid #707070;
+  background-color: #F2EDE9;
+  background-image: url("https://daks2k3a4ib2z.cloudfront.net/535247a0560e86a20500080c/53498e45ba1095344a0005fa_arrow-right.svg");
+  background-position: 110% 50%;
+  background-size: auto 20%;
+  background-repeat: no-repeat;
+  transition: all 500ms ease;
+  color: #3C2A10;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 641px) {
+  .wp-block-button__link {
+    width: 30rem;
+  }
+}
+
+.wp-block-button__link:hover {
+  width: 90vw;
+  border-color: #000;
+  background-color: #181818;
+  background-position: 95% 50%;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+@media (min-width: 641px) {
+  .wp-block-button__link:hover {
+    width: 30rem;
+  }
 }
 
 .p-globalmenu {
