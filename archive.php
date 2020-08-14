@@ -21,7 +21,6 @@
                 <button><?php next_posts_link('＜＜ 前へ'); ?></button>
                 <button><?php previous_posts_link('次へ ＞＞'); ?></button>
             </div>
-
             
             <div class="p-pagination--tablet">
                 <?php if(function_exists("wp_pagenavi")): ?>
