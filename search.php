@@ -2,7 +2,7 @@
 
             
             <div class="p-topimage02">
-                <img src="<?php bloginfo('template_url'); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
                 <h1 class="p-topimage02__title">Search:<br><span><?php the_search_query(); ?></span></h1><!-- 検索結果ページに検索文字列を表示 -->
             </div>
             

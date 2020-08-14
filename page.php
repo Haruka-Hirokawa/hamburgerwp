@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
             <div class="p-topimage03">
-                <img src="<?php bloginfo('template_url'); ?>/images/PCpage_title.jpg" alt="ショップ">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/PCpage_title.jpg" alt="ショップ">
                 <h1 class="p-topimage01__title"><?php the_title(); ?></h1>
             </div>
 

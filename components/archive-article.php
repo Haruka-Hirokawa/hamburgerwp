@@ -4,7 +4,7 @@
                     <?php if(has_post_thumbnail()) { ?>
                         <?php the_post_thumbnail('', array('class' => 'c-card__img')); ?> 
                     <?php } else { ?>
-                         <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="no-image" class="c-card__img">
+                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="no-image" class="c-card__img">
                     <?php } ?>                                           
                                             
                     <dl class="c-card__contents">

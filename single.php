@@ -6,7 +6,7 @@
             <?php if(has_post_thumbnail()) { ?>
                         <?php the_post_thumbnail(); ?> 
                     <?php } else { ?>
-                         <img src="<?php bloginfo('template_url'); ?>/images/noimage.png" alt="no-image">
+                         <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/noimage.png" alt="no-image">
                     <?php } ?>
                 <h1 class="p-topimage01__title"><?php the_title(); ?></h1>
             </div>
@@ -30,16 +30,3 @@
     
     
     <?php get_footer(); ?>
-
-
-    
-    <!-- post-template-default single single-post postid-18 single-format-standard logged-in admin-bar  customize-support -->
-
-    <!-- page-template-default page page-id-17 logged-in admin-bar  customize-support -->
-
-    <!-- wp-admin wp-core-ui js post-php auto-fold admin-bar post-type-post branch-5-4 version-5-4-2 admin-color-fresh locale-ja block-editor-page is-fullscreen-mode wp-embed-responsive customize-support svg sticky-menu -->
-
-
-    <!-- home blog logged-in admin-bar  customize-support -->
-
-    <!-- archive category category-takeout category-3 logged-in admin-bar  customize-support -->

@@ -2,7 +2,7 @@
 
             
             <div class="p-topimage02">
-                <img src="<?php bloginfo('template_url'); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/PCarchive_title.jpg" alt="ハンバーガーとオニオンリング">
                 <?php if(is_category()) : ?>
                 <h1 class="p-topimage02__title">Menu:<br><span><?php single_cat_title(); ?></span></h1>
                 <?php endif; ?>
