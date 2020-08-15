@@ -1,6 +1,6 @@
 <?php
     
-    add_theme_support( 'menus' ); // メニューバー表示
+    register_nav_menu( 'cateogry-menu','Cateogry Menu'); // １つのメニューバー表示
 
     add_theme_support( 'title-tag' ); // <title>タグを<head>タグに挿入
     
