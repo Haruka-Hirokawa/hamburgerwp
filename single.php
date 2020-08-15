@@ -15,6 +15,15 @@
                 <?php the_content(); ?>
                 <p><?php the_tags(); ?></p>
             </div>
+
+            <?php $args = array (
+                'before' => '<div class="page-split">',
+                'after' => '</div>',
+                'link_before' => '<span>',
+                'link_after' => '</span>',
+                );
+                wp_link_pages( $args );
+            ?>
             
             <?php endwhile; else: ?>
                 <p>お探しの商品の詳細はありません</p>
