@@ -114,7 +114,6 @@ li, dl, dt, dd {
 }
 
 .wp-block-media-text {
-  display: flex;
   align-items: flex-start;
   margin: 0 auto;
   padding: 2rem 0;
@@ -180,6 +179,7 @@ li, dl, dt, dd {
 
 .wp-block-buttons {
   margin-left: 5%;
+  margin-bottom: 10rem;
 }
 
 .wp-block-button__link {
