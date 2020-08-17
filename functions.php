@@ -4,16 +4,16 @@
 
     add_theme_support( 'title-tag' ); // <title>タグを<head>タグに挿入
     
-    // ページごとのタイトルタグの条件分岐タグを挿入？表示はどう変わる？
-    // function humburger_title($title){
-    //     if(is_front_page() && is_home()){
-    //         $title = get_bloginfo('name','display');
-    //     }elseif(is_singular()){
-    //         $title = single_post_title('',false);
-    //     }
-    //     return $title;
-    // }
-    // add_filter('pre_get_document_title','humburger_title' );
+    function humburger_title($title) {
+        if(is_front_page() && is_home()){
+            $title = get_bloginfo('name','display');
+        }elseif(is_singular()){
+            $title = single_post_title('',false);
+        }
+        return $title;
+    }
+    add_filter('pre_get_document_title','humburger_title' );
+
 
     add_theme_support( 'post-thumbnails' );
 
@@ -53,14 +53,6 @@
         wp_enqueue_style( 'theme-editor-style', $editor_style_url );
     }
 
-
-    // テーマチェック：待機状態のコメント返信のスクリプトを見つけることができません。プラグインとテーマの移行/2.7/Enhanced Comment Displayをご覧ください。
-    function demo_script() {
-        if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-            wp_enqueue_script( 'comment-reply' );
-        }
-    }
-    add_action( 'wp_enqueue_scripts', 'demo_script' );
 
     // テーマチェック：コンテンツの幅が定義されていません。
     if ( ! isset( $content_width ) ) $content_width = 525;
