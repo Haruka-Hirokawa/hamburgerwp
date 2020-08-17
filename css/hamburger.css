@@ -545,7 +545,6 @@ li, dl, dt, dd {
 }
 
 .wp-block-media-text {
-  align-items: flex-start;
   margin: 0 auto;
   padding: 2rem 0;
   width: 90%;
