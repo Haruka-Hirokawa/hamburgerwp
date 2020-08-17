@@ -13,7 +13,6 @@
 
             <div class="p-editor-style">
                 <?php the_content(); ?>
-                <p><?php the_tags(); ?></p>
             </div>
 
             <?php $args = array (
