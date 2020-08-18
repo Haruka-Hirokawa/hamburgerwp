@@ -57,4 +57,8 @@
     // テーマチェック：コンテンツの幅が定義されていません。
     if ( ! isset( $content_width ) ) $content_width = 525;
 
+
+    // テーマチェック→「見つかりません」のエラー
+    add_theme_support( 'automatic-feed-links' ) ;
+
     
